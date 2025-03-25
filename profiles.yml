@@ -1,0 +1,15 @@
+default:
+  target: default
+  outputs:
+    default:
+      type: duckdb
+      path: 'test.duckdb'
+      database: test
+      schema: sandbox
+
+unit-test:
+  target: unit-test
+  outputs:
+    unit-test:
+      type: duckdb
+      path: 'unit_test.duckdb'

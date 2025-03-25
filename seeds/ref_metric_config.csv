@@ -1,0 +1,3 @@
+metric_code,source,metric_title,metric_value_type,source_table,value_field,aggregation_type,date_field
+ADS.SPEND,source-analytics,Total Ad Spend,MONEY,ads,spend,SUM,date
+ADS.CONVERSION.COUNT,source-analytics,Total Conversions,COUNT,ads,conversions,SUM,date
