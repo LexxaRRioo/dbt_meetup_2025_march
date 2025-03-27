@@ -20,9 +20,8 @@ tests:
   dbt_meetup_2025_march:
     +tags: ["unit-test"]
 
-
 vars:
-  dbt_source_tags: ["yandex-ads"]
+  dbt_source_tags: ["yandex-ads"] # default
   unit_tests_config:
       input_format: "csv"
       column_separator: "|"

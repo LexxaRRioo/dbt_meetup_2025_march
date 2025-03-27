@@ -7,6 +7,13 @@
     """
 ) %}
 
+    {# This part doesn't affect the test. Actual mock data is located in model itself  #}
+    {% call dbt_unit_testing.mock_ref("ref_metric_config") %}
+        metric_code           |source_table|value_field  |aggregation_type|date_field
+        'ADS.SPEND'           |'ads'       |'spend'      |'SUM'           |'date'
+        'ADS.CONVERSION.COUNT'|'ads'       |'conversions'|'SUM'           |'date'
+    {% endcall %}
+
     {% call dbt_unit_testing.mock_ref("ads") %}
         source|campaign_type|date|impressions|clicks|conversions|spend
         'google_ads'|'search' |'2025-01-01'|1420|145|42|3250.75

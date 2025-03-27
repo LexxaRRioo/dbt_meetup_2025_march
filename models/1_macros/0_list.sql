@@ -1,8 +1,10 @@
 {{ config(materialized="view") }}
 
+{%- set i_list0 = ["a", "b", "c"] %}
 {%- set o_list1 = get_list() -%}
 {%- set o_list2 = get_list_return() -%}
-{%- set i_list0 = ["a", "b", "c"] %}
+
+{{ log(">>>>>>>>>>>>>>>>>> My params: " ~ o_list1 is string, info=true) if execute }}
 
 select 'i_list0', {{ i_list0 }}, {{ i_list0 | length }}, {{ i_list0 is string }}
 

@@ -1,4 +1,3 @@
-{#
 {% macro duckdb__get_tables_by_pattern_sql(schema_pattern, table_pattern, exclude='', database=target.database) %}
 
         select distinct
@@ -11,4 +10,3 @@
         and table_name not ilike '{{ exclude }}'
 
 {% endmacro %}
-#}
