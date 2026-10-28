@@ -2,7 +2,7 @@
 
 Hey! This repo contains some dumb stuff DBT does. At version 1.9
 
-Youtube link would be added later.
+My speech: https://youtu.be/Hk8_ZoR1jSA?si=BD7tHxnPI_a63HjF
 
 ## Outline
 
